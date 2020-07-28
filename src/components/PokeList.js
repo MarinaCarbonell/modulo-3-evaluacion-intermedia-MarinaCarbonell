@@ -1,8 +1,9 @@
 import React from 'react';
 import Pokemon from './Pokemon';
 
-class List extends React.Component {
+class PokeList extends React.Component {
   renderPokemons () {
+    console.log (this.props);
     return this.props.pokemons.map ((pokemon, index) => {
       return (
         <Pokemon
